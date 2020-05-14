@@ -27,31 +27,31 @@
 
     <title>NF-Blog</title>
   </head>
+
   <body class="container">
-    <header class="row mb-5">
-      <div class="col-12 col-md-3 mr-md-3">
-        <img
-          src="img/neuefische-gmbh-logo.svg"
-          alt="neuefische Firmenlogo - School and Pool for digital talent"
-        />
-      </div>
-      <div class="col-12 col-md">
-        <h1>neuefische Blog Anna</h1>
-      </div>
-      <div class="col-12 col-md-3">
-        <ul class="nav">
-          <li class="nav-item mr-3">
-            <a href="#articles">articles</a>
-          </li>
-          <li class="nav-item">
-            <a href="#imprint">imprint</a>
-          </li>
-        </ul>
-      </div>
+    <header
+      class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-end"
+    >
+      <img
+        src="img/neuefische-gmbh-logo.svg"
+        alt="neuefische Firmenlogo - School and Pool for digital talent"
+      />
+
+      <h1 class="m-3 m-md-0">neuefische Blog Anna</h1>
+
+      <ul class="nav">
+        <li class="nav-item mr-3">
+          <a href="#articles">articles</a>
+        </li>
+        <li class="nav-item">
+          <a href="#imprint">imprint</a>
+        </li>
+      </ul>
     </header>
-    <main id="articles">
+
+    <main id="articles" class="my-5 p-4 shadow">
       <article>
-        <div class="row mb-5">
+        <div class="row">
           <div class="col-12 col-md-8">
             <h2>HTML</h2>
 
@@ -61,12 +61,21 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
               quaerat dignissimos asperiores veritatis iste qui architecto, esse
               quas, hic ipsa recusandae exercitationem fugit impedit sint labore
-              iusto vitae id quasi?
+              iusto vitae id quasi? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Accusamus, maxime iusto ad iste voluptate
+              obcaecati corrupti architecto nulla esse sed?
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
               amet possimus doloremque provident? Numquam, fugiat ut soluta odio
-              quisquam velit.
+              quisquam velit. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Accusantium molestias rem quam, reprehenderit nostrum minus
+              suscipit modi ex itaque numquam. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Praesentium architecto enim itaque
+              exercitationem cum nihil temporibus, facere corporis dolorum! Ea
+              dolor consequatur aut neque! Animi labore ad inventore ducimus
+              praesentium quasi, blanditiis explicabo recusandae dolorum
+              repudiandae, iure corporis voluptas accusantium.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -75,56 +84,75 @@
               commodi distinctio? Eos consequuntur, numquam sequi fugiat porro
               maiores reprehenderit perferendis dignissimos, nostrum culpa eius?
               Deserunt exercitationem soluta, illum repellat distinctio vero.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              doloremque impedit corporis doloribus iusto quis odit quasi et
+              maxime, ratione natus asperiores distinctio porro. Nostrum alias
+              tempore reiciendis quis deserunt, libero veritatis dicta dolore
+              cumque error est delectus possimus nesciunt, nisi rerum explicabo
+              placeat debitis magni fuga facere maiores. Quidem!
             </p>
           </div>
 
-          <div class="col-12 col-md p-3">
-            <aside>
+          <div class="col-12 col-md align-self-center">
+            <aside class="text-center border border-muted p-4">
               <h3>
                 Author
               </h3>
               <h4>Anna Ellerbrake</h4>
               <img
+                class="img-fluid rounded-circle my-3"
                 src="img/author.jpeg"
                 alt="Autor Anna Ellerbrake mit Blick auf Fluss und Wald"
               />
               <h4>Further articles</h4>
-              <ul>
-                <li>Link1</li>
-                <li>Link2</li>
-                <li>Link3</li>
+              <ul class="list-unstyled">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
               </ul>
             </aside>
           </div>
         </div>
 
-        <section>
-          <h2>Comments</h2>
-          <p>You can leave a comment:</p>
-          <form>
-            <label>
-              Name:
-              <input type="text" required />
-            </label>
-            <label for="">
-              New Comment:
-              <textarea name="" id="" cols="50" rows="10"></textarea>
-            </label>
-            <button>
-              Send
-            </button>
-          </form>
+        <h2>Comments</h2>
+        <p>You can leave a comment here:</p>
+        <form>
+          <label>
+            Name:
+            <input type="text" required />
+          </label>
+          <label for="">
+            New Comment:
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+          </label>
+          <button>
+            Send
+          </button>
+        </form>
 
-          <h3>Thoughts on HTML - The Art of Sectioning</h3>
-
-          <p>
-            Jan Grade, 2020-05-13 23:00
-          </p>
-          <p>
-            Mensch, das schaut ja schon richtig professionell aus!
-          </p>
-          <p>Jerry Erbs, 2020-05-14 08:00</p>
-          <p>Jan!!! Wieso bist du so spät noch am Rechner?! &#128545;</p>
+        <section class="mt-5">
+          <h3>Previous Comments</h3>
+          <ul class="list-unstyled mt-4 row">
+            <div class="col-12 col-md-6">
+              <li class="border border-muted p-2">
+                <address rel="author">
+                  Jan Grade,
+                  <time datetime="2020-05-13T23:20">13.05.2020, 23.20 Uhr</time
+                  >:
+                </address>
+                <q>
+                  Mensch, das schaut ja schon richtig professionell aus!
+                </q>
+              </li>
+              <li class="mt-4 border border-muted p-2">
+                <address rel="author">
+                  Jerry Erbs,
+                  <time datetime="2020-05-14T8:10">14.05.2020, 08.10 Uhr</time>:
+                </address>
+                <q>Jan!!! Wieso bist du so spät noch am Rechner?! &#128545;</q>
+              </li>
+            </div>
+          </ul>
         </section>
       </article>
     </main>
